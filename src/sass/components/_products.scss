@@ -1,0 +1,9 @@
+.products {
+  color: #191B29;
+  & h3 {
+    @include head-text;
+  }
+  & p{
+    @include small-text;
+  }
+}

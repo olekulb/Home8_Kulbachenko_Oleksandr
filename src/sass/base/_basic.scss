@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:300,400,700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-family: $main-font;
+  color: $main-content-color;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  &:hover {
+    cursor: pointer;
+    color: $second-color;
+  }
+}
+
+.list {
+  @include list;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.container {
+  @include container($mobile-width);
+  @media (min-width: 766px) {
+    @include container($tablet-width);
+  }
+  @media (min-width: 1000px) {
+    @include container($normal-width);
+  }
+}

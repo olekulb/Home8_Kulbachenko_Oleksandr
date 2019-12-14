@@ -1,0 +1,18 @@
+.top-footer {
+  background-color: #D75D0E;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  & a {
+    color: $second-color;
+  }
+}
+
+.bottom-footer {
+  @include small-text;
+  color: $second-color;
+  & .foot-logo {
+    font-weight: $head-font-weight;
+  }
+}
+

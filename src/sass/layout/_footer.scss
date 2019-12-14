@@ -1,0 +1,32 @@
+.top-footer, .bottom-footer {
+  min-height: 50vh;
+  & li {
+    padding: 5px;
+  }
+}
+
+.top-footer .container {
+  padding: 30px 0;
+  text-align: center;
+  & ul {
+    margin: 0;
+    padding: 0;
+  }
+  @media (min-width: 766px) {
+    display: flex;
+    & ul {
+      display: inline-block;
+      width: 33%;
+    }
+  }
+}
+
+.bottom-footer .container {
+  text-align: center;
+  & p {
+    margin: 0 auto;
+    &:first-child {
+      padding-top: 80px;
+    }
+  }
+}

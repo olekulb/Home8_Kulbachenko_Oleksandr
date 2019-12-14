@@ -1,0 +1,23 @@
+.main-fon .container {
+  padding: 50px 15px;
+  text-align: center;
+  @media (min-width: 1000px) {
+    text-align: left;
+  }
+}
+
+.logo-link img {
+  padding-top: 15px;
+}
+
+.nav {
+  display: none;
+  @media (min-width: 766px) {
+    display: block;
+    float: right;
+  }
+}
+
+.nav-list li {
+  margin: 0;
+}

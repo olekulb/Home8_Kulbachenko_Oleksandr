@@ -1,0 +1,45 @@
+.newsletter .container {
+  color: $second-color;
+  & h2 {
+    font-family: $second-font;
+    font-size: $second-font-size;
+    font-weight: $head-font-weight;
+  }
+  & p {
+    font-family: $main-font;
+    font-size: $small_font-size;
+    font-weight: $second-font-weight;
+  }
+}
+
+.form-body {
+  width: 90%;
+  height: 54px;
+  border-radius: 27px;
+  margin: 0 auto;
+  @media (min-width: 766px) {
+    width: 60%;
+    position: relative;
+  }
+}
+
+.email-field {
+  color: $second-color;
+  font-family: $second-font;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+  background-color: transparent;
+  height: 54px;
+  border-radius: 27px;
+  border: 1px solid $second-color;
+  padding-left: 30px;
+  &::-webkit-input-placeholder {
+    color: $second-color;
+  }
+  @media (min-width: 766px) {
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+}
+

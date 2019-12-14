@@ -1,0 +1,15 @@
+.news .container {
+  color: $main-content-color;
+  & h2 {
+    @include head-text;
+  }
+}
+
+.news-item {
+  & h3 {
+    @include head-text;
+  }
+  & p {
+    @include small-text;
+  }
+}

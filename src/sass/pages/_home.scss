@@ -1,0 +1,23 @@
+.main {
+  color: $second-color;
+}
+
+.main-section-header {
+  font-family: $second-font;
+  font-size: $head-font-size;
+  font-weight: $second-font-weight;
+}
+
+.main-paragraph {
+  @include head-text;
+}
+
+.main-item {
+  & h3 {
+    @include head-text;
+  }
+  & p {
+    @include small-text;
+  }
+}
+

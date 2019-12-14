@@ -1,0 +1,21 @@
+@import "normalize/import-now";
+
+@import 'utils/variables';
+@import 'utils/mixins';
+
+@import 'base/basic';
+
+@import 'layout/grid';
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'components/buttons';
+@import 'components/products';
+@import 'components/news';
+@import 'components/form';
+@import 'components/invisibleTitle';
+@import 'components/backgroundColor';
+@import 'components/backgroundImage';
+@import 'components/footer';
+
+@import 'pages/home';

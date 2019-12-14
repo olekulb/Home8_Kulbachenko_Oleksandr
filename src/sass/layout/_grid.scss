@@ -1,0 +1,115 @@
+.main {
+  //don't allow positioning on the white place of background, switched off now
+  //padding-top: 110vh;
+  @media (min-width: 766px) {
+    padding-top: 100vh;
+  }
+  @media (min-width: 1000px) {
+    padding-top: 50vh;
+  }
+}
+
+.main .container {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.main-list {
+  margin-top: 100px;
+  @media (min-width: 766px) {
+    display: flex;
+  }
+}
+
+.main-item {
+  max-width: 288px;
+  margin: 0 auto;
+}
+
+.main-button-container {
+  display: flex;
+  padding: 50px 0 80px 0;
+}
+
+.main-button-position {
+  margin: 0 auto;
+}
+
+.news .container {
+  text-align: center;
+  & h2 {
+    padding: 80px 0;
+    margin: 0;
+  }
+}
+
+.news-list {
+  margin: 0;
+  @media (min-width: 766px) {
+    display: flex;
+  }
+}
+
+.news-item {
+  @extend .main-item;
+  & img {
+    width: 100%;
+    text-align: center;
+  }
+  @media (min-width: 766px) {
+    width: 32%;
+  }
+}
+
+.news-button-container {
+  display: flex;
+  padding: 30px 0 80px 0;
+}
+
+.news-button {
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  text-align: center;
+  & h2 {
+    padding: 80px 0 20px 0;
+    margin: 0;
+  }
+  & p {
+    max-width: 533px;
+    margin: 0 auto 40px auto;
+  }
+}
+
+.form-wrapper {
+  min-height: 150px;
+  text-align: center;
+}
+
+.products {
+  margin: 50px 0;
+}
+
+.product-photo {
+  width: 100%;
+  @media (min-width: 766px) {
+    width: 50%;
+    margin-right: 15px;
+  }
+}
+
+.first-product {
+  @media (min-width: 766px) {
+    & .product-photo {
+      float: right;
+    }
+  }
+}
+.second-product {
+  @media (min-width: 766px) {
+    & .product-photo {
+     float: left;
+    }
+  }
+}

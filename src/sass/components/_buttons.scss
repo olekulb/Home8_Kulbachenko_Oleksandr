@@ -1,0 +1,121 @@
+.nav-button {
+  height: 49px;
+  width: 144px;
+  text-align: center;
+  line-height: 49px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: inline-block;
+  &:hover {
+    background-color: $main-hover-color;
+    border-radius: 25px;
+    cursor: pointer;
+    & a{
+      color: $second-color;
+    }
+  }
+}
+
+.button {
+  height: 54px;
+  text-align: center;
+  line-height: 54px;
+  border-radius: 27px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main-button {
+  @extend .button;
+  width: 213px;
+  color: #612316;
+  background-color: $second-color;
+  &:hover {
+    background-color: #612316;
+    cursor: pointer;
+    & a{
+      color: $second-color;
+    }
+  }
+}
+
+.news-button {
+  @extend .button;
+  width: 179px;
+  background-color: $second-color;
+  color: #4E5159;
+  font-family: $second-font;
+  font-size: $small_font-size;
+  font-weight: $second-font-weight;
+  &:hover {
+    background-color: #4E5159;
+    cursor: pointer;
+    & a{
+      color: $second-color;
+    }
+  }
+}
+
+.first-product .detail-button {
+  @extend .button;
+  width: 213px;
+  background-color: $main-hover-color;
+  font-family: $second-font;
+  font-size: $main-font-size;
+  font-weight: $second-font-weight;
+  & a {
+    color: $second-color;
+  }
+  &:hover {
+    background-color: $second-color;
+    border: 1px solid $main-hover-color;
+    cursor: pointer;
+    & a{
+      color: $main-hover-color;
+    }
+  }
+}
+
+.second-product .detail-button {
+  @extend .button;
+  width: 213px;
+  background-color: $second-hover-color;
+  font-family: $second-font;
+  font-size: $main-font-size;
+  font-weight: $second-font-weight;
+  & a {
+    color: $second-color;
+  }
+  &:hover {
+    background-color: $second-color;
+    border: 1px solid $second-hover-color;
+    cursor: pointer;
+    & a{
+      color: $second-hover-color;
+    }
+  }
+}
+
+.form-button {
+  width: 50%;
+  margin-top: 20px;
+  height: 54px;
+  border-radius: 27px;
+  background-color: $second-color;
+  font-weight: $main-font-weight;
+  border: 1px solid $second-color;
+  color: #612316;
+  overflow: hidden;
+  &:hover {
+  background-color: #612316;
+  border: 1px solid $second-color;
+  color: $second-color;
+  cursor: pointer;
+  }
+  @media (min-width: 766px) {
+    width: 50%;
+    position: absolute;
+    right: 0;
+    margin: 0;
+  }
+}
